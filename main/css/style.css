@@ -236,6 +236,8 @@ input.form-control {
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
 }
 
 input:focus,
@@ -4661,6 +4663,8 @@ Carousel Movies
     transform: translate(-50%, -50%);
     z-index: 9;
     opacity: 0;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .gen-carousel-movies-style-3 .gen-movie-contain:hover .gen-movie-action {
@@ -6121,7 +6125,11 @@ Play Button
 
     70% {
         transform: translateX(-2px);
-    }
+        -webkit-transform: translateX(-2px);
+        -moz-transform: translateX(-2px);
+        -ms-transform: translateX(-2px);
+        -o-transform: translateX(-2px);
+}
 
     100% {
         transform: translateX(0);

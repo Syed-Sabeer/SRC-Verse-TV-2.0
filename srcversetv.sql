@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2023 at 03:34 PM
+-- Generation Time: Mar 29, 2024 at 02:17 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -494,9 +494,7 @@ CREATE TABLE `trending_movies` (
 --
 
 INSERT INTO `trending_movies` (`id`, `movie_id`) VALUES
-(1, 1),
-(2, 7),
-(3, 9);
+(1, 15);
 
 -- --------------------------------------------------------
 
@@ -600,13 +598,13 @@ INSERT INTO `watchlist` (`id`, `user_id`, `movie_id`, `series_id`) VALUES
 (39, 65, NULL, 36),
 (40, 65, 2, NULL),
 (43, 85, 17, NULL),
-(44, 65, NULL, 45),
 (45, 86, 24, NULL),
 (46, 87, NULL, 35),
 (48, 89, NULL, 45),
 (49, 65, 18, NULL),
 (50, 65, 12, NULL),
-(51, 65, 11, NULL);
+(51, 65, 11, NULL),
+(52, 65, NULL, 45);
 
 --
 -- Indexes for dumped tables
@@ -789,7 +787,7 @@ ALTER TABLE `top_streaming_series`
 -- AUTO_INCREMENT for table `trending_movies`
 --
 ALTER TABLE `trending_movies`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tv_series`
@@ -807,7 +805,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `watchlist`
 --
 ALTER TABLE `watchlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- Constraints for dumped tables
