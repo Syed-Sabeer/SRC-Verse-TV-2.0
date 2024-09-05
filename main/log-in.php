@@ -5,7 +5,6 @@ session_start();
 include("../utilities/connection.php");
 
 $error_message = ""; // Initialize the error message
-
 if (isset($_POST["btn"])) {
     $Email2 = $_POST["email2"];
     $Pass2 = $_POST["password2"];

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <?php
 session_start();
 // Check user authentication
